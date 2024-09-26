@@ -8,7 +8,7 @@ def click(char):
         try:
             # заменяем спец функции
             result = eval(expression.get().replace('^', '**').replace
-                          ('sqrt', 'math.sqrt').replace('log', 'math.log10'))
+                          ('√', 'math.sqrt').replace('log', 'math.log10'))
             expression.set(result)
         except Exception as e:
             expression.set("Ошибка")
@@ -29,7 +29,7 @@ buttons = [
     '7', '8', '9', 'C',  # Кнопки для числа и очистки
     '4', '5', '6', '/',
     '1', '2', '3', '*',
-    '0', 'sqrt', 'log', '-',  # Кнопки для операций
+    '0', '√', 'log', '-',  # Кнопки для операций
     '(', ')', '^', '+',
     '='  # Кнопка для вычисления результата
 ]
